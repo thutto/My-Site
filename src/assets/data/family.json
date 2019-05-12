@@ -1,0 +1,34 @@
+{
+    "family": [
+        {
+            "id": "thutto",
+            "firstName": "Travis",
+            "lastName": "Hutto",
+            "title": "Dad",
+            "description": "Husband, Father, Engineer, Gamer, Wakeboarder", 
+            "img":"/Travis_Avatar.jpg",
+            "facebook":"https://www.facebook.com/travis.m.hutto",
+            "linkedIn":"https://www.linkedin.com/in/travis-hutto-273ba261",
+            "twitter":"https://twitter.com/THutto4"
+        },
+        {
+            "id": "bhutto",
+            "firstName": "Brittany",
+            "lastName": "Hutto",
+            "title": "Mother",
+            "description": "Wife, Stay at Home Mom, Gamer, Reader, Foodie, Runner", 
+            "img":"/Brittany_Avatar.jpg",
+            "facebook":"https://www.facebook.com/brittany.hutto4",
+            "linkedIn":"https://www.linkedin.com/in/brittany-hutto-bsh-99591a80",
+            "twitter":"https://twitter.com/bnhutto4"
+        },
+        {
+            "id": "mhutto",
+            "firstName": "Mark",
+            "lastName": "Hutto",
+            "title": "Son",
+            "description": "The Micro Miracle", 
+            "img":"/Mark_Avatar.jpg"
+        }
+    ]
+}
