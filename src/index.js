@@ -7,12 +7,14 @@ import "assets/scss/material-kit-react.scss?v=1.4.0";
 
 // pages for this product
 import HomePage from "views/Home/HomePage.jsx";
+import ProfilePage from "views/ProfilePage/ProfilePage.jsx";
 
 var hist = createBrowserHistory();
 
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
+      <Route path="/profile/:id" component={ProfilePage} />
       <Route path="/" component={HomePage} />
     </Switch>
   </Router>,

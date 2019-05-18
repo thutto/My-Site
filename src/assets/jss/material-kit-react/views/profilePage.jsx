@@ -15,9 +15,9 @@ const profilePageStyle = {
   },
   description: {
     margin: "1.071rem auto 0",
-    maxWidth: "600px",
-    color: "#999",
-    textAlign: "center !important"
+    maxWidth: "800px",
+    textAlign: "center !important",
+    paddingBottom: "35px"
   },
   name: {
     marginTop: "-80px"

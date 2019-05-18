@@ -1,4 +1,5 @@
 import React from "react";
+import { withRouter } from 'react-router-dom';
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -20,6 +21,11 @@ import family from "assets/data/family.json"
 const faces = require.context('../../../assets/img/faces', true);
 
 class MemberSection extends React.Component {
+
+  nextPath(id) {
+    this.props.history.push(`/profile/${id}`);
+  }
+
   render() {
     const { classes } = this.props;
     const { member } = this.props;
@@ -32,14 +38,13 @@ class MemberSection extends React.Component {
       return familyMember.id === member;
     });
 
-    console.log(faces);
     let img_src = faces(`.${memberObj.img}`)
 
     return (
       <GridItem xs={12} sm={12} md={4}>
         <Card plain>
           <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-            <img src={img_src} alt="..." className={imageClasses} />
+            <img style={{cursor: 'pointer'}} src={img_src} alt="..." className={imageClasses} onClick={() => this.nextPath(memberObj.id) } />
           </GridItem>
           <h4 className={classes.cardTitle}>
             {`${memberObj.firstName} ${memberObj.lastName}`}
@@ -95,6 +100,18 @@ class MemberSection extends React.Component {
             >
               <i className={classes.socials + " fab fa-linkedin-in"} />
             </Button> : null}
+
+            { memberObj.blog ?
+            <Button
+              justIcon
+              href={memberObj.blog}
+              target="_blank"
+              rel="noopener noreferrer"
+              color="transparent"
+              className={classes.margin5}
+            >
+              <i className={classes.socials + " fas fa-blog"} />
+            </Button> : null}
           </CardFooter>
         </Card>
       </GridItem>
@@ -102,4 +119,4 @@ class MemberSection extends React.Component {
   }
 }
 
-export default withStyles(memberStyle)(MemberSection);
+export default withRouter(withStyles(memberStyle)(MemberSection));

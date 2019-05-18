@@ -9,7 +9,12 @@
             "img":"/Travis_Avatar.jpg",
             "facebook":"https://www.facebook.com/travis.m.hutto",
             "linkedIn":"https://www.linkedin.com/in/travis-hutto-273ba261",
-            "twitter":"https://twitter.com/THutto4"
+            "twitter":"https://twitter.com/THutto4",
+            "blog":"https://travis.hutto.space",
+            "profile": {
+                "detail": "I am a Gaming dad who took a passion and made it a profession. I live in Saint Augustine, Florida with my amazing wife. More information will be added to this in the future, but this is good for now.",
+                "headerImg": "/bg2.jpg"
+            }
         },
         {
             "id": "bhutto",
@@ -20,7 +25,11 @@
             "img":"/Brittany_Avatar.jpg",
             "facebook":"https://www.facebook.com/brittany.hutto4",
             "linkedIn":"https://www.linkedin.com/in/brittany-hutto-bsh-99591a80",
-            "twitter":"https://twitter.com/bnhutto4"
+            "twitter":"https://twitter.com/bnhutto4",
+            "profile": {
+                "detail": "I drink and I know things.",
+                "headerImg": "/bg7.jpg"
+            }
         },
         {
             "id": "mhutto",
@@ -28,7 +37,11 @@
             "lastName": "Hutto",
             "title": "Son",
             "description": "The Micro Miracle", 
-            "img":"/Mark_Avatar.jpg"
+            "img":"/Mark_Avatar.jpg",
+            "profile": {
+                "detail": "I'm the Micro Miracle. Born at 27 weeks at just 1lb 7oz I defy the odds everyday!",
+                "headerImg": "/landing-bg.jpg"
+            }
         }
     ]
 }

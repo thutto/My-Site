@@ -25,6 +25,11 @@ class Header extends React.Component {
     this.handleDrawerToggle = this.handleDrawerToggle.bind(this);
     this.headerColorChange = this.headerColorChange.bind(this);
   }
+
+  nextPath() {
+    this.props.history.push('/');
+  }
+
   handleDrawerToggle() {
     this.setState({ mobileOpen: !this.state.mobileOpen });
   }
@@ -73,7 +78,7 @@ class Header extends React.Component {
       [classes.absolute]: absolute,
       [classes.fixed]: fixed
     });
-    const brandComponent = <Button className={classes.title}>{brand}</Button>;
+    const brandComponent =  <Button className={classes.title} onClick={() => this.nextPath() }>{brand}</Button>
     return (
       <AppBar className={appBarClasses}>
         <Toolbar className={classes.container}>
